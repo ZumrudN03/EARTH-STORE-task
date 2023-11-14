@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  background-image: url("https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/10/Banner.jpg");
+  min-height: 70vh;
+  background-position: center right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+header nav .nav-icon p {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+header nav .nav-menu {
+  display: flex;
+}
+header nav .nav-menu ul {
+  display: flex;
+}
+header nav .nav-menu ul li {
+  padding-right: 30px;
+  color: black;
+  font-weight: 500;
+}
+header nav .nav-menu .icons i {
+  padding-right: 30px;
+  font-size: 25px;
+}
+header nav .nav-menu .icons i sup {
+  font-size: 7px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  padding: 4px;
+}
+header .headTextBox {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+}
+header .headTextBox h1 {
+  font-size: 70px;
+  color: rgb(44, 84, 29);
+  letter-spacing: 5px;
+}
+header .headTextBox p {
+  font-size: 40px;
+  padding: 10px 0;
+}
+header .headTextBox button {
+  background-color: rgb(116, 168, 74);
+  color: white;
+  transition: 300ms;
+  border: none;
+  padding: 10px 30px;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+header .headTextBox button:hover {
+  background-color: #2c541d;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a:visited {
+  color: inherit;
+}
+
+#poster {
+  display: flex;
+  min-height: 65vh;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid lightgray;
+}
+#poster .img img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+#poster .posterContent .category {
+  font-size: 15px;
+  color: gray;
+  padding-top: 10px;
+}
+#poster .posterContent .name {
+  font-weight: 600;
+  padding: 10px 0;
+}
+#poster .posterContent .price {
+  font-weight: 600;
+  font-size: 15px;
+  color: gray;
+}
+
+#customers {
+  padding: 80px 0px;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#customers h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+#customers .customersCards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+#customers .customersCards .customersCard {
+  width: 350px;
+  height: 350px;
+}
+#customers .customersCards .customersCard .customersCardIcon {
+  font-size: 30px;
+  color: #2c541d;
+}
+#customers .customersCards .customersCard .customersCardImage {
+  padding: 20px 0px;
+}
+#customers .customersCards .customersCard .customersCardImage img {
+  border-radius: 50%;
+}
+#customers .customersCards .customersCard .customersName {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+#postcard {
+  background-image: url("https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/10/Call-to-action.jpg");
+  min-height: 50vh;
+  background-position: center right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#postcard .postcardTextBox {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  gap: 30px;
+}
+#postcard .postcardTextBox h2 {
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+#postcard .postcardTextBox button {
+  border: none;
+  background-color: #74a84a;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  transition: 300ms;
+}
+#postcard .postcardTextBox button:hover {
+  background-color: #2c541d;
+}
+
+#service {
+  padding: 80px 0px;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  gap: 50px;
+}
+#service .serviceCard {
+  display: flex;
+}
+#service .serviceCard .serviceCardIcon {
+  color: white;
+  background-color: #2c541d;
+  padding: 10px 15px;
+  border-radius: 50%;
+}/*# sourceMappingURL=main.css.map */
