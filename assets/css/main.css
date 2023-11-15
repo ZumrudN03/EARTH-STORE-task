@@ -38,6 +38,12 @@ header nav .nav-menu ul li {
   color: black;
   font-weight: 500;
 }
+header nav .nav-menu .icons {
+  display: flex;
+}
+header nav .nav-menu .icons .fa-bars {
+  display: none;
+}
 header nav .nav-menu .icons i {
   padding-right: 30px;
   font-size: 25px;
@@ -79,6 +85,150 @@ header .headTextBox button:hover {
   background-color: #2c541d;
 }
 
+.container {
+  max-width: 100%;
+  height: 0px;
+  overflow: hidden;
+  transition: 400ms;
+  background-color: white;
+}
+.container ul li {
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+
+.active {
+  height: 172px;
+}
+
+.side-bar {
+  background-color: white;
+  position: fixed;
+  width: 22%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  transform: translate(330px, 0px);
+  transition: 500ms;
+}
+.side-bar .sideBarIcon {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+}
+.side-bar .sideBarIcon p {
+  color: #74a84a;
+  font-weight: 600;
+}
+.side-bar .sideBarIcon i {
+  color: #74a84a;
+  font-size: 20px;
+}
+.side-bar .sideBarContent {
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+}
+.side-bar .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.side-bar .btn button {
+  color: white;
+  background-color: #74a84a;
+  border: none;
+  padding: 10px 60px;
+  font-size: 15px;
+  transition: 300ms;
+  cursor: pointer;
+}
+.side-bar .btn button:hover {
+  background-color: #2c541d;
+}
+
+@media (max-width: 575.98px) {
+  .nav-menu ul {
+    display: none !important;
+  }
+  .nav-menu .icons .fa-bars {
+    display: block !important;
+  }
+  .nav-menu .icons .fa-user {
+    display: none !important;
+  }
+  .nav-icon p {
+    font-size: 15px !important;
+  }
+  .headTextBox h1 {
+    font-size: 50px !important;
+  }
+  .headTextBox p {
+    font-size: 20px !important;
+  }
+  #customers h2 {
+    font-size: 25px !important;
+  }
+  #postcard h2 {
+    font-size: 25px !important;
+  }
+  #postcard button {
+    padding: 5px 10px !important;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  footer {
+    flex-direction: column !important;
+    gap: 15px;
+  }
+  .footer-bar ul {
+    flex-direction: column;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .nav-menu ul {
+    display: none !important;
+  }
+  .nav-menu .icons .fa-bars {
+    display: block !important;
+  }
+  .nav-menu .icons .fa-user {
+    display: none !important;
+  }
+  .nav-icon p {
+    font-size: 20px !important;
+  }
+  .headTextBox h1 {
+    font-size: 60px !important;
+  }
+  .headTextBox p {
+    font-size: 30px !important;
+  }
+  .header_content #service .service_container {
+    flex-wrap: wrap !important;
+  }
+  footer {
+    flex-direction: column !important;
+    gap: 15px;
+  }
+  .footer-bar ul {
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .nav-menu ul {
+    display: none !important;
+  }
+  .nav-menu .icons .fa-bars {
+    display: block !important;
+  }
+  .nav-menu .icons .fa-user {
+    display: none !important;
+  }
+}
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -89,11 +239,16 @@ a:visited {
 
 #poster {
   display: flex;
-  min-height: 65vh;
   justify-content: center;
   align-items: center;
   gap: 20px;
   border-bottom: 1px solid lightgray;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+#poster .poster_v {
+  width: 330px;
+  height: 450px;
 }
 #poster .img img {
   width: 350px;
@@ -132,9 +287,10 @@ a:visited {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 #customers .customersCards .customersCard {
-  width: 350px;
+  width: 250px;
   height: 350px;
 }
 #customers .customersCards .customersCard .customersCardIcon {
@@ -189,17 +345,50 @@ a:visited {
 
 #service {
   padding: 80px 0px;
-  width: 60%;
+  width: 70%;
   margin: auto;
   display: flex;
-  gap: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 #service .serviceCard {
   display: flex;
+  width: 300px;
+  height: 250px;
 }
 #service .serviceCard .serviceCardIcon {
+  padding-right: 20px;
+}
+#service .serviceCard .serviceCardIcon i {
+  padding: 15px;
+  border-radius: 50%;
   color: white;
   background-color: #2c541d;
-  padding: 10px 15px;
-  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+#service .serviceCard .serviceCardText .serviceCardTextName {
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+#service .serviceCard .serviceCardText .serviceCardTextWhatIs {
+  font-size: 13px;
+  color: gray;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 15vh;
+  border-top: 1px solid lightgray;
+}
+footer .footer-bar ul {
+  display: flex;
+  gap: 10px;
+}
+footer .footerEarthStore p {
+  font-size: 25px;
+  letter-spacing: 2px;
+  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */
