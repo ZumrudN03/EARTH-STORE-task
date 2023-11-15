@@ -3,11 +3,11 @@ const closeIcon=document.querySelector(".fa-xmark")
 const sidebar=document.querySelector(".side-bar")
 
 icon.addEventListener("click",function () {
-    sidebar.style.transform= "translate(0px , 0px)";
+    sidebar.style.transform= "translate(0% , 0%)";
 })
 
 closeIcon.addEventListener("click",function(){
-    sidebar.style.transform= "translate(330px , 0px)";
+    sidebar.style.transform= "translate(100% , 0%)";
 })
 
 const bar=document.querySelector(".fa-bars")
