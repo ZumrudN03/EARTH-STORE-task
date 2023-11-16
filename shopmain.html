@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Nunito:wght@300;400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-icon">
+        <p>EARTH STORE</p>
+      </div>
+      <div class="nav-menu">
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="./shopmain.html">SHOP</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+        <div class="icons">
+          <i class="fa-solid fa-bag-shopping"><sup>0</sup></i>
+          <i class="fa-solid fa-user"></i>
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="side-bar">
+        <div class="sideBarIcon">
+          <p>Shopping Cart</p>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="sideBarContent">
+          <p>No products in the cart.</p>
+        </div>
+        <div class="btn">
+          <button>CONTINUE SHOPPING</button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="shopContainer">
+        <div class="leftSide">
+          <div class="leftSideContainer">
+            <div class="search">
+              <input type="text" placeholder="Search products..." />
+              <button class="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+
+            <div class="range">
+              <p>Filter by price</p>
+              <div class="range-slider">
+                <span class="range-selected"></span>
+              </div>
+              <div class="range-input">
+                <input
+                  type="range"
+                  class="min"
+                  min="0"
+                  max="100"
+                  value="30"
+                  step="2"
+                />
+                <input
+                  type="range"
+                  class="max"
+                  min="0"
+                  max="99"
+                  value="70"
+                  step="2"
+                />
+              </div>
+              <div class="range-price">
+                <label for="min"></label>
+                <input type="number" name="min" value="30" />
+                <label for="max"></label>
+                <input type="number" name="max" value="70" />
+              </div>
+            </div>
+
+            <div class="categories">
+              <p>Categories</p>
+              <a href="./shop.html">Postcards <span>(6)</span></a>
+              <a href="">Posters <span>(6)</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="rightSide">
+          <div class="rightSideContainer">
+            <div class="postcards">
+              <a href="./index.html">Home</a>
+              <span>/ Postcard</span>
+            </div>
+            <h2>Shop</h2>
+            <div class="selector">
+              <p>Showing all 12 results</p>
+              <select name="" id="sorting">
+                <option>Defoult Sorting</option>
+                <option>Sort by popularity</option>
+                <option>Sort by average rating</option>
+                <option>Sort by latest</option>
+                <option>Sort by price:low to high</option>
+                <option>Sort by price:high to low</option>
+              </select>
+            </div>
+            <div class="shopCardSection">
+              <div class="poster_v">
+                <div class="img">
+                  <img
+                    src="https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/10/PostcardV2-min.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="posterContent">
+                  <p class="category">Postcards</p>
+                  <p class="name">Postcard V1</p>
+                  <p class="price">$23.99</p>
+                </div>
+              </div>
+              <div class="poster_v">
+                <div class="img">
+                  <img
+                    src="https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/11/Postcard3.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="posterContent">
+                  <p class="category">Postcards</p>
+                  <p class="name">Postcard V2</p>
+                  <p class="price">$17.99</p>
+                </div>
+              </div>
+              <div class="poster_v">
+                <div class="img">
+                  <img
+                    src="https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/10/Postcard-6-min.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="posterContent">
+                  <p class="category">Postcards</p>
+                  <p class="name">Postcard V3</p>
+                  <p class="price">$14.99</p>
+                </div>
+              </div>
+              <div class="poster_v">
+                <div class="img">
+                  <img
+                    src="https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/10/PostcardV5-min.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="posterContent">
+                  <p class="category">Postcards</p>
+                  <p class="name">Postcard V4</p>
+                  <p class="price">$23.99</p>
+                </div>
+              </div>
+              <div class="poster_v">
+                <div class="img">
+                  <img
+                    src="https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2021/08/PostcardV6.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="posterContent">
+                  <p class="category">Postcards</p>
+                  <p class="name">Postcard V5</p>
+                  <p class="price">$17.99</p>
+                </div>
+              </div>
+              <div class="poster_v">
+                <div class="img">
+                  <img
+                    src="https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/11/Postcard1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="posterContent">
+                  <p class="category">Postcards</p>
+                  <p class="name">Postcard V6</p>
+                  <p class="price">$14.99</p>
+                </div>
+              </div>
+              <div class="poster_v">
+                <div class="img">
+                  <img
+                    src="https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/10/Poster5.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="posterContent">
+                  <p class="category">Posters</p>
+                  <p class="name">Poster V1</p>
+                  <p class="price">$23.99</p>
+                </div>
+              </div>
+              <div class="poster_v">
+                <div class="img">
+                  <img
+                    src="https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/10/Poster6.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="posterContent">
+                  <p class="category">Posters</p>
+                  <p class="name">Poster V2</p>
+                  <p class="price">$17.99</p>
+                </div>
+              </div>
+              <div class="poster_v">
+                <div class="img">
+                  <img
+                    src="https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/10/Poster4.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="posterContent">
+                  <p class="category">Posters</p>
+                  <p class="name">Poster V3</p>
+                  <p class="price">$14.99</p>
+                </div>
+              </div>
+              <div class="poster_v">
+                <div class="img">
+                  <img
+                    src="https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/10/Poster2.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="posterContent">
+                  <p class="category">Posters</p>
+                  <p class="name">Poster V4</p>
+                  <p class="price">$23.99</p>
+                </div>
+              </div>
+              <div class="poster_v">
+                <div class="img">
+                  <img
+                    src="https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/10/Poster3.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="posterContent">
+                  <p class="category">Posters</p>
+                  <p class="name">Poster V5</p>
+                  <p class="price">$17.99</p>
+                </div>
+              </div>
+              <div class="poster_v">
+                <div class="img">
+                  <img
+                    src="https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/10/Poster1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="posterContent">
+                  <p class="category">Posters</p>
+                  <p class="name">Poster V6</p>
+                  <p class="price">$14.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-bar">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Shop</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="footerEarthStore">
+        <p>EARTH STORE</p>
+      </div>
+      <div class="credit">Copyright © 2023 Planet Earth Store</div>
+    </footer>
+
+    <script src="./assets/javascript/script.js"></script>
+  </body>
+</html>
